@@ -1,0 +1,118 @@
+:root {
+  --bg: #090d18;
+  --surface: #111827;
+  --surface-2: #0b1220;
+  --text: #e2e8f0;
+  --text-soft: #94a3b8;
+  --ring: #273449;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 700px at 10% -10%, #1d4ed8 0%, transparent 35%),
+    radial-gradient(900px 500px at 100% 0%, #0f766e 0%, transparent 30%),
+    var(--bg);
+  color: var(--text);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+header,
+.rounded-2xl,
+.rounded-xl,
+.rounded-lg {
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+
+header {
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+}
+
+.app-header {
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.94) 0%, rgba(11, 18, 32, 0.9) 100%) !important;
+  border-bottom-color: #334155 !important;
+}
+
+.app-header__title {
+  color: #f8fafc !important;
+}
+
+.app-header__subtitle {
+  color: #a5b4fc !important;
+}
+
+.app-header__actions button,
+.app-header__import {
+  background-color: rgba(30, 41, 59, 0.75) !important;
+  border-color: #475569 !important;
+  color: #e2e8f0 !important;
+}
+
+.app-header__actions button:hover,
+.app-header__import:hover {
+  background-color: #334155 !important;
+  border-color: #64748b !important;
+}
+
+.rounded-2xl {
+  background: color-mix(in srgb, var(--surface) 96%, transparent);
+  border-color: var(--ring) !important;
+}
+
+input,
+select,
+button,
+pre {
+  outline: none;
+}
+
+input,
+select {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--ring) !important;
+}
+
+input::placeholder {
+  color: var(--text-soft);
+}
+
+pre {
+  border: 1px solid var(--ring);
+}
+
+p,
+label,
+span {
+  color: inherit;
+}
+
+/* Force dark appearance for the utility classes used in the app markup. */
+.bg-white,
+.bg-slate-50,
+.bg-slate-100 {
+  background-color: var(--surface) !important;
+}
+
+.border-slate-200,
+.border-slate-300 {
+  border-color: var(--ring) !important;
+}
+
+.text-slate-900,
+.text-slate-700 {
+  color: var(--text) !important;
+}
+
+.text-slate-500,
+.text-slate-600 {
+  color: var(--text-soft) !important;
+}
+
+.hover\:bg-slate-100:hover {
+  background-color: #1f2937 !important;
+}
