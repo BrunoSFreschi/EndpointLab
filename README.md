@@ -1,3 +1,6 @@
+<img width="1277" height="629" alt="image" src="https://github.com/user-attachments/assets/0c74c6bc-e1a7-4852-bc5c-94eada72e8c5" />
+
+
 # EndpointLab
 
 SPA simples para montar payloads JSON, executar requisições HTTP e visualizar respostas rapidamente.
