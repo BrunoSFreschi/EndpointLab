@@ -61,6 +61,39 @@ Nao precisa subir servidor local para usar a interface.
 
 Se preferir, tambem pode arrastar `index.html` para o navegador.
 
+## Publicar no GitHub Pages
+
+Este projeto ja esta preparado para deploy automatico via GitHub Actions.
+
+Arquivos adicionados para isso:
+
+- `.github/workflows/deploy-pages.yml`
+- `.nojekyll`
+
+### Passo a passo
+
+1. Suba o projeto para um repositorio no GitHub.
+2. Garanta que a branch principal se chama `main`.
+3. Faça push:
+
+```bash
+git add .
+git commit -m "chore: setup github pages deploy"
+git push origin main
+```
+
+4. No GitHub, abra `Settings > Pages`.
+5. Em `Build and deployment`, selecione `Source: GitHub Actions`.
+6. Aguarde o workflow `Deploy static site to GitHub Pages` finalizar em `Actions`.
+
+URL final esperada:
+
+```text
+https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/
+```
+
+Se quiser domínio personalizado depois, adicione um `CNAME` na raiz do projeto.
+
 ## Como usar
 
 1. Informe a URL do endpoint.
