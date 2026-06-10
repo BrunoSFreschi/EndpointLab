@@ -250,14 +250,7 @@
               </div>
 
                <div class="mt-4 grid gap-3 md:grid-cols-2">
-                 <div>
-                   <label class="mb-1 block text-sm font-medium text-slate-700" for="iterations">Iteracoes</label>
-                   <input id="iterations" type="number" min="1" value="1" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm" />
-                 </div>
-                 <div>
-                   <label class="mb-1 block text-sm font-medium text-slate-700" for="intervalMs">Intervalo (ms)</label>
-                   <input id="intervalMs" type="number" min="0" value="0" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm" />
-                 </div>
+               
                </div>
              </div>
 
